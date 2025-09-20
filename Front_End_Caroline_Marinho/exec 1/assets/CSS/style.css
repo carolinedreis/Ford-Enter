@@ -1,0 +1,19 @@
+/*Estilização da página index*/
+.center{
+    text-align: center;
+}
+.titulo{
+    font-size: 35pt;
+    color: linen;
+    font-family: cursive;
+}
+
+.justify{
+    text-align: justify;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
