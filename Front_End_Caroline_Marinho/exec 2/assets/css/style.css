@@ -1,1 +1,144 @@
-/*Estilização da página
+/* Reset simples para manter consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e3f2fd);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Menu de navegação */
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1565c0;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #0d47a1;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+/* Imagens */
+img {
+    max-width: 200px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Formulário */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #1565c0;
+    box-shadow: 0px 0px 5px rgba(21,101,192,0.4);
+}
+
+/* Botão estilizado */
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #1565c0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0d47a1;
+}
+
+/* Redes sociais */
+h2 {
+    margin-top: 40px;
+    text-align:center;
+}
+.social {
+    text-align: center; 
+a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+    display: inline;
+    text-align: center;
+}
+}
+a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Endereço e mapa */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+ol {
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+

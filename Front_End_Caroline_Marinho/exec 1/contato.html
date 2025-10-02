@@ -19,23 +19,22 @@
 <h1 class="center titulo">Entre em Contato</h1>
 
 <div class="container">
-    <!-- Coluna do formulário -->
     <div class="texto p-30">
         <form>
             <label for="nome">Nome</label><br>
-            <input type="text" id="nome"><br><br>
-
+            <input type="text" id="nome" onkeyup="validaNome()"><br><br>
+            <div id="txtNome"></div>
             <label for="email">E-mail</label><br>
-            <input type="email" id="email"><br><br>
-
+            <input type="email" id="email" onkeyup="validaEmail()"><br><br>
+            <div id="txtEmail"></div>
             <label for="assunto">Assunto</label><br>
-            <textarea name="assunto" id="assunto" cols="40" rows="5"></textarea><br><br>
-
-            <button type="button">Enviar</button>
+            <textarea name="assunto" id="assunto" cols="40" rows="5" onkeyup="validaAssunto()"></textarea><br><br>
+            <div id="txtAssunto"></div>
+            <button type="button" onclick="enviar()">Enviar</button>
         </form>
     </div>
 
-    <!-- Coluna do mapa -->
+    
     <div class="mapa p-30">
         <p class="texto">Rua Professor Agostinho Alvim - Bairro: Jardim Colégio</p>
         <p class="texto">Capão Redondo - São Paulo</p>
@@ -46,7 +45,9 @@
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade" id="mapa"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()">
         </iframe>
     </div>
 </div>
@@ -71,6 +72,7 @@
 
 
     </p>
-<body>
- <html>
+    <script src="assets/JS/script.js"></script>
+</body>
+ </html>
     
